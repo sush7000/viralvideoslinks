@@ -17,36 +17,37 @@
       padding: 10px;
     }
     .profile-pic {
-      width: 120px;
-      height: 120px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       object-fit: cover;
     }
     h1 {
-      font-size: 24px;
+      font-size: 28px;
       margin: 10px 0;
     }
     p {
-      font-size: 16px;
+      font-size: 18px;
       margin: 5px 0 20px 0;
     }
     .telegram-btn, .btn {
       display: block;
-      width: 100%;
-      max-width: 400px;
-      margin: 10px auto;
-      padding: 16px;
+      width: 95%;
+      max-width: 450px;
+      margin: 12px auto;
+      padding: 18px;
       text-decoration: none;
-      font-size: 18px;
+      font-size: 22px;
       font-weight: bold;
-      border-radius: 8px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
     }
     .telegram-btn {
       background-color: #0088cc;
       color: white;
     }
     .telegram-btn:hover {
-      background-color: #0075b5;
+      background-color: #0070a8;
     }
     .btn {
       background-color: #4CAF50;
@@ -54,6 +55,20 @@
     }
     .btn:hover {
       background-color: #45a049;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 26px;
+      }
+      p {
+        font-size: 17px;
+      }
+      .telegram-btn, .btn {
+        font-size: 20px;
+        padding: 20px 12px;
+      }
     }
   </style>
 </head>
@@ -66,7 +81,6 @@
 
   <!-- Telegram Join Button -->
   <a href="https://t.me/YourTelegramLink" target="_blank" class="telegram-btn">📢 Join Telegram For Random Videos 📢</a>
-
 <a href="https://shrinkme.io/yourlink1" target="_blank" class="btn">Post No. 1</a>
 <a href="https://shrinkme.io/yourlink2" target="_blank" class="btn">Post No. 2</a>
 <a href="https://shrinkme.io/yourlink3" target="_blank" class="btn">Post No. 3</a>
