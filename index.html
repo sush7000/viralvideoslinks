@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Instagram Viral Videos</title>
   <style>
     html, body {
@@ -66,10 +66,7 @@
   <h1>INSTAGRAM VIRAL VIDEOS</h1>
   <p>🥵👇 ALL VIDEOS LINK FROM INSTAGRAM BIO 👇🥵</p>
 
-  <!-- Telegram Join Button -->
   <a href="https://t.me/YourTelegramLink" target="_blank" class="telegram-btn">📢 Join Telegram For Random Videos 📢</a>
-
-  <!-- Dynamic Buttons -->
   <div id="posts"></div>
 </div>
 
@@ -78,18 +75,17 @@
 <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
 <script>
   const firebaseConfig = {
-    apiKey: "AIzaSyDz-SNVEJI-grCYJcpaHQ4aIDIwIWaeBt8",
-    authDomain: "mynotes-24988.firebaseapp.com",
-    databaseURL: "https://mynotes-24988-default-rtdb.firebaseio.com",
-    projectId: "mynotes-24988",
-    storageBucket: "mynotes-24988.appspot.com",
-    messagingSenderId: "599177137893",
-    appId: "1:599177137893:web:8eac4ceb0869ebcca4ce0c"
+    apiKey: "AIzaSyDeh2YAbTvupfNhEbT1uDBvoNiW1KQU9-o",
+    authDomain: "trending-viral-links.firebaseapp.com",
+    databaseURL: "https://trending-viral-links-default-rtdb.firebaseio.com",
+    projectId: "trending-viral-links",
+    storageBucket: "trending-viral-links.appspot.com",
+    messagingSenderId: "803173160374",
+    appId: "1:803173160374:web:fc0bb2ab64564f59ee9d17"
   };
 
   firebase.initializeApp(firebaseConfig);
   const db = firebase.database();
-
   const postsContainer = document.getElementById('posts');
 
   db.ref('posts').on('value', (snapshot) => {
